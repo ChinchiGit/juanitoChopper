@@ -19,9 +19,10 @@ main{
     background-color: black;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4 , h5 {
     color: var(--yellowButtons);
     font-family: Barletta;
+    text-align: center;
 }
 
 .content{
@@ -59,11 +60,7 @@ header{
     padding-top: 70px;
 }
 
-.banner > h1, h3, h4, h6 {
-    text-align: center;
-    background-color: black;
-    padding: 4%;
-}
+
 
 #tituloBanner {
     margin-bottom: 0px;
@@ -181,3 +178,21 @@ address{
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+
+
+/*BIOGRAFIA*/
+
+#aboutMe{
+    
+
+}
+
+#bio1{
+    background-image: url(../assets/img/fondoAboutMe.png);
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
