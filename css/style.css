@@ -1,0 +1,183 @@
+/*General*/
+
+
+:root {
+    --black: rgb(0, 0, 0);
+    --blueNav: rgb(20, 33, 61);
+    --yellowButtons: #fda312;
+    --greyHoov: rgb(229, 229, 229);
+    --whiteMainText: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: Barletta;  
+    src: url(../assets/fonts/Barletta.otf);
+}
+
+main{
+    text-align: center;
+    background-color: black;
+}
+
+h1, h2, h3, h4 {
+    color: var(--yellowButtons);
+    font-family: Barletta;
+}
+
+.content{
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--blueNav);
+}
+
+
+
+
+
+header{
+    background-image: url(../assets/img/banner.jpg);
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    text-align: center;
+}
+
+
+
+.banner{
+    font-family: Barletta;
+    color: var(--yellowButtons);
+    letter-spacing: 0.25em;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+}
+
+.banner > h1, h3, h4, h6 {
+    text-align: center;
+    background-color: black;
+    padding: 4%;
+}
+
+#tituloBanner {
+    margin-bottom: 0px;
+    background-color: black;
+    border-style: ridge;
+    border-color: var(--yellowButtons);
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#subtituloBanner {
+    margin-top: 0px;
+    background-color: var(--yellowButtons);
+    border-style: ridge;
+    color: black;
+    border-color: var(--yellowButtons);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 0px 0px 10px 10px;
+    border-top: 0px;
+
+}
+
+
+nav{
+    top: auto;
+    background-color: var(--yellowButtons);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: var(--blueNav);
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+    margin-top: 83px;
+
+}
+
+.navButton{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 30px;
+    padding: 8px;
+    width: 200px;
+    box-shadow: 6px 1px 20px 8px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+.navButton > a{
+    padding-top: 4px;
+    padding-left: 8px;
+}
+
+.navButton > img{
+    width: 30px;
+    height: 30px;
+}
+
+address{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7em;
+    color: var(--yellowButtons);
+    background-color: black;
+    padding: 5px;
+
+}
+
+#footerA {
+    background-color: var(--greyHoov);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#logoFooter{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+}
+
+#rrss{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#rrss > div> img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/*INICIO*/
+
+#profilePic{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#bienvenida{
+    background-image: url(../assets/img/fondoInicio.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
