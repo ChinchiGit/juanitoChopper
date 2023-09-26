@@ -9,6 +9,7 @@
     --whiteMainText: rgb(255, 255, 255);
 }
 
+
 @font-face {
     font-family: Barletta;  
     src: url(../assets/fonts/Barletta.otf);
@@ -17,6 +18,13 @@
 main{
     text-align: center;
     background-color: black;
+}
+
+p{
+    width: 95%;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 1em;
 }
 
 h1, h2, h3, h4 , h5, h6 {
@@ -41,9 +49,9 @@ h1, h2, h3, h4 , h5, h6 {
 
 header{
     background-image: url(../assets/img/banner.jpg);
-    height: 500px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     background-size: cover;
     text-align: center;
 }
@@ -88,7 +96,6 @@ header{
 
 
 nav{
-    top: auto;
     background-color: var(--yellowButtons);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -184,12 +191,11 @@ address{
 
 /*BIOGRAFIA*/
 
-#bio1{
+#bio{
     background-image: url(../assets/img/fondoAboutMe.png);
     background-position: center;
-    background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
 }
 
 
@@ -209,6 +215,7 @@ form{
     padding: 10px;
     background-color: rgba(253, 163, 18, .7);
     border-radius: 10px;
+    
 }
 
 label{
@@ -220,3 +227,27 @@ label{
     padding-top: 10px;
 
 }
+
+/*PORTFOLIO*/
+
+.galeriaFotos{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(253, 163, 18, .7);
+    margin:15px;
+    padding: 30px;
+    border-radius:20px;
+}
+
+.galeriaFotos > img {
+    width: 320px;
+    height: 180px;
+    padding: 3px;
+    border-radius: 50px;
+    border: 3px;
+    border-style: inset;
+    border-color: black;
+    margin-bottom: 10px;
+}
+ 
