@@ -4,7 +4,7 @@
 :root {
     --black: rgb(0, 0, 0);
     --blueNav: rgb(20, 33, 61);
-    --yellowButtons: #fda312;
+    --yellowButtons: rgb(253, 163, 18);
     --greyHoov: rgb(229, 229, 229);
     --whiteMainText: rgb(255, 255, 255);
 }
@@ -19,7 +19,7 @@ main{
     background-color: black;
 }
 
-h1, h2, h3, h4 , h5 {
+h1, h2, h3, h4 , h5, h6 {
     color: var(--yellowButtons);
     font-family: Barletta;
     text-align: center;
@@ -148,6 +148,7 @@ address{
     margin-left: auto;
     margin-right: auto;
     padding-top: 0px;
+    text-align: center;
 }
 
 #rrss{
@@ -166,7 +167,7 @@ address{
 
 /*INICIO*/
 
-#profilePic{
+.profilePic{
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -183,11 +184,6 @@ address{
 
 /*BIOGRAFIA*/
 
-#aboutMe{
-    
-
-}
-
 #bio1{
     background-image: url(../assets/img/fondoAboutMe.png);
     background-position: center;
@@ -196,3 +192,31 @@ address{
     background-size: auto;
 }
 
+
+/*CONTACTO*/
+
+#contenedorFormulario{
+    background-image: url(../assets/img/fondoContact.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(253, 163, 18, .7);
+    border-radius: 10px;
+}
+
+label{
+    padding-bottom: 5px;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+
+}
