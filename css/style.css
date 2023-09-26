@@ -43,10 +43,6 @@ h1, h2, h3, h4 , h5, h6 {
     background-color: var(--blueNav);
 }
 
-
-
-
-
 header{
     background-image: url(../assets/img/banner.jpg);
     height: 500px; 
@@ -55,8 +51,6 @@ header{
     background-size: cover;
     text-align: center;
 }
-
-
 
 .banner{
     font-family: Barletta;
@@ -67,8 +61,6 @@ header{
     margin-right: auto;
     padding-top: 70px;
 }
-
-
 
 #tituloBanner {
     margin-bottom: 0px;
@@ -91,9 +83,7 @@ header{
     padding-bottom: 5px;
     border-radius: 0px 0px 10px 10px;
     border-top: 0px;
-
 }
-
 
 nav{
     background-color: var(--yellowButtons);
@@ -103,8 +93,7 @@ nav{
     display: flex;
     flex-flow: column wrap;
     align-content: space-around;
-    margin-top: 83px;
-
+    margin-top: 84px;
 }
 
 .navButton{
@@ -120,6 +109,9 @@ nav{
     margin-bottom: 8px;
 }
 
+.navButton:hover {
+    background-color: var(--greyHoov);
+  }
 
 .navButton > a{
     padding-top: 4px;
@@ -228,26 +220,140 @@ label{
 
 }
 
+input:hover{
+    background: var(--blueNav);
+    color:white;
+}
 /*PORTFOLIO*/
+
+.contentPorfolio{
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--blueNav);
+}
 
 .galeriaFotos{
     margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color:rgba(253, 163, 18, .7);
     margin:15px;
     padding: 30px;
     border-radius:20px;
+    text-align: center;
 }
 
 .galeriaFotos > img {
-    width: 320px;
-    height: 180px;
+    width: 85%;
     padding: 3px;
-    border-radius: 50px;
+    border-radius: 25px;
     border: 3px;
     border-style: inset;
     border-color: black;
     margin-bottom: 10px;
 }
- 
+
+.galeriaFotos > img:hover {
+    background-color: var(--greyHoov);
+}
+
+#introTrabajos {
+    background-image: url(../assets/img/fondoWorks.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*MEDIA QUERY*/
+
+@media only screen and (max-width: 350px) {
+    #bienvenida, #bio, #contenedorFormulario {
+        width: 90%;
+    }
+
+    nav{
+        margin-top: 46px;
+    }
+    .banner{
+        width: 90%;
+    }
+
+    form{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+
+    p{
+        font-size: 1.1rem;
+    }
+    
+    header{
+        height: 377px;
+    }
+    
+    nav {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    #footerA{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #logoFooter{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #rrss{
+        margin-right: 40px;
+    }
+
+
+
+  }
+
+  @media only screen and (min-width: 864px) {
+    header{
+        height: 315px;
+    }
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    p{
+        font-size: 1rem;
+    }
+
+    .content{
+        padding-left:8%;
+        padding-right: 8%;
+        flex-direction: row;
+  
+    }
+    
+    #bienvenida, #bio, #contenedorFormulario {
+        width: 70%;
+        padding-left: 40px;
+        
+    }
+
+    form{
+        width: 65%;
+        margin: auto
+    } ;
+
+
+
+    #logoFooter{
+        width: 250px;
+    }
+   
+  }
