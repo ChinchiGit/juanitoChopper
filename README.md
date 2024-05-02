@@ -8,6 +8,12 @@ The website can be accessed at the following link;
 [Juanito Chopper](https://chinchigit.github.io/projectQuiz/)
 
 
+
+https://github.com/ChinchiGit/juanitoChopper/assets/144268383/b9659c30-465f-455b-a9d4-ddef7fe36f50
+
+
+
+
 ##  Objectives
 
 1. Create a personal page with HTML and CSS technologies and "mobile first" web design.
